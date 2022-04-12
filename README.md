@@ -1,3 +1,7 @@
+### Notes
+
+* For mapping center pivot irrigation systems, please, see our latest work [here](https://github.com/mapbiomas-brazil/irrigation/tree/master/center-pivot-irrigation-systems).
+
 ### Get gdal development libraries:
 
 ```
@@ -60,6 +64,8 @@ python3 run.py --mode=generate --image=image5.tif --labels=image5_labels.tif --o
 python3 run.py --mode=train --train=train.h5 --test=test.h5 --epochs=100 --batch_size=5 --classes=2
 ```
 
+The trained model is available here: https://drive.google.com/file/d/11RO6vJL6eYmtz2YlsEGmz2hUPJ3H1rqd/view?usp=sharing
+
 ### Evaluate model
 
 ```
@@ -71,3 +77,6 @@ python3 run.py --mode=evaluate --evaluate=validation.h5 --batch_size=5 --classes
 ```
 python3 run.py --mode=predict --input=image.tif --output=output.tif --chip_size=1024 --channels=4 --grids=1 --batch_size=5 --classes=2
 ```
+
+### Paper
+Saraiva, M.; Protas, É.; Salgado, M.; Souza, C. Automatic Mapping of Center Pivot Irrigation Systems from Satellite Images Using Deep Learning. Remote Sens. 2020, 12, 558. DOI: [10.3390/rs12030558](https://doi.org/10.3390/rs12030558)
